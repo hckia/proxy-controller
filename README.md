@@ -15,6 +15,16 @@ define('PROXY_PATHS', array(
     '/path/to/exception3/'
 ));
 ```
+### recommended, but not required
+You can define custom headers within `wp-config.php` like so...
+
+```php
+define('API_HEADERS', [
+    'Content-Type: application/json',
+    'Authorization: Bearer your_token'
+    // ... more headers here
+]);
+```
 
 ## CONSTANTS available for configuration (defined in wp-config.php)
 
@@ -52,3 +62,6 @@ require_once(__DIR__ . '/includes/proxy-requests.php');
 
 1. within the same directory as wp-config, create an includes directory
 2. copy the `custom-headers.php` `proxy-paths.php` and `proxy-request.php`
+
+
+git commit -m "modified proxy-requests.php to properly utilize constants, and to allow for custom headers to be passed to an array"
