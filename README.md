@@ -1,9 +1,8 @@
 # proxy-controller
-for offloading requests from archived directories via php 
+For offloading requests from archived directories via php 
 
 The intention of this plugin is to provide Pantheon users a method of offloading directories and files via PHP. I've designed it so that you can modify / add CORS, to control where requests are coming through. Alternatively, you can set none, and let the client cache the request.
 ## Installation 
-
 Recommended method is to install this under mu-plugins.
 
 ### CONSTANT required (defined in wp-config.php)
@@ -34,4 +33,3 @@ define('CUSTOM_HEADERS', [
 ```
 
 `NEW_ORIGIN_CORS` - constant accepts true or false if set to to true, it will assume CORS have been configured at the new origin.
-
