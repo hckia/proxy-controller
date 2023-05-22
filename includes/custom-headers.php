@@ -1,5 +1,6 @@
 <?php
 // Always included to to ensure requests come from here
+// @TODO: This should be user-configurable. Pantheon's default static assets are set to wildcard
 header( 'Access-Control-Allow-Origin: ' . get_option('siteurl') );
 
 // Set caching headers
